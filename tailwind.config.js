@@ -11,12 +11,15 @@ module.exports = {
       xl: '1440px',
     },
     colors: {
-      'strongpurple': '#1e1a33',
-      'purple': '#403a60',
-      'light-purple': '#5a5478',
-      'gray': '#bdc9c5',
-      'orange': '#fd5001',
-      'yellow': '#ffa300'
+      transparent: 'transparent',
+      current: 'currentColor',
+      white: '#ffffff',
+      strongpurple: '#1e1a33',
+      purple: '#403a60',
+      lightpurple: '#5a5478',
+      gray: '#bdc9c5',
+      orange: '#fd5001',
+      yellow: '#ffa300'
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
@@ -29,7 +32,7 @@ module.exports = {
       '2xl': '30px',
       '3xl': '40px',
       '4xl': '50px',
-      '5xl': '60px'
+      '5xl': '156px'
 
     },
     extend: {
@@ -43,6 +46,7 @@ module.exports = {
     },
   },
   plugins: [],
+  safelist: ['strongpurple', 'purple', 'lightpurple', 'gray', 'orange', 'yellow']
 }
 
 
