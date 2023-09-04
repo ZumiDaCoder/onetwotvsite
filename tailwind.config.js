@@ -19,7 +19,8 @@ module.exports = {
       lightpurple: '#5a5478',
       gray: '#bdc9c5',
       orange: '#fd5001',
-      yellow: '#ffa300'
+      yellow: '#ffa300',
+      black: '#000'
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
