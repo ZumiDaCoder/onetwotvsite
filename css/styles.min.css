@@ -2736,7 +2736,7 @@ video {
 .hamburger {
   cursor: pointer;
   width: 24px;
-  height: 24px;
+  height: 16px;
   transition: all 0.25s;
   position: relative;
 }
@@ -2745,38 +2745,41 @@ video {
 .hamburger-middle,
 .hamburger-bottom {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 24px;
   height: 2px;
   background-color: orange;
-  transform: rotate(0);
+  left: 0;
+  width: 24px;
+  display: block;
   transition: all 0.5s;
 }
 
 .hamburger-middle {
-  transform: translateY(7px);
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .hamburger-bottom {
-  transform: translateY(14px);
+  bottom: 0;
 }
 
-.open {
-  transform: rotateX(90deg);
-  transform: translateY(0px);
+.hamburger-top {
+  top: 0;
 }
 
 .open .hamburger-top {
-  transform: rotate(45deg) translate(6px) translate(6px);
+  /* transform: rotate(45deg) translate(6px) translate(6px); */
+  top: 50%;
+  transform: rotate(45deg) translateY(-50%);
 }
 
 .open .hamburger-middle {
-  display: none;
+  opacity: 0;
 }
 
 .open .hamburger-bottom {
-  transform: rotate(-45deg) translate(6px) translate(-6px);
+  /* transform: rotate(-45deg) translate(6px) translate(-6px); */
+  bottom: 50%;
+  transform: translateY(50%) rotate(-405deg);
 }
 
 @media (min-width: 480px) {
@@ -2852,14 +2855,6 @@ video {
 }
 
 @media (min-width: 480px) {
-  .sm\:w-auto {
-    width: auto;
-  }
-
-  .sm\:self-center {
-    align-self: center;
-  }
-
   .sm\:underline {
     text-decoration-line: underline;
   }
@@ -2966,10 +2961,6 @@ video {
 }
 
 @media (min-width: 976px) {
-  .lg\:block {
-    display: block;
-  }
-
   .lg\:hidden {
     display: none;
   }
