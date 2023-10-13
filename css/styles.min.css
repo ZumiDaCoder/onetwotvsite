@@ -669,12 +669,12 @@ video {
   isolation: auto;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
 .-z-10 {
   z-index: -10;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .float-right {
@@ -733,6 +733,10 @@ video {
   margin-top: -3.5rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mb-32 {
   margin-bottom: 8rem;
 }
@@ -789,16 +793,12 @@ video {
   margin-top: 8rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .box-border {
@@ -944,6 +944,10 @@ video {
   height: 1.25rem;
 }
 
+.h-5\/6 {
+  height: 83.333333%;
+}
+
 .h-64 {
   height: 16rem;
 }
@@ -952,20 +956,12 @@ video {
   height: 2rem;
 }
 
-.h-\[80vh\] {
-  height: 80vh;
-}
-
 .h-auto {
   height: auto;
 }
 
 .h-full {
   height: 100%;
-}
-
-.h-5\/6 {
-  height: 83.333333%;
 }
 
 .w-1 {
@@ -2334,6 +2330,18 @@ video {
   padding-bottom: 2rem;
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
+.pl-10 {
+  padding-left: 2.5rem;
+}
+
+.pl-8 {
+  padding-left: 2rem;
+}
+
 .pt-12 {
   padding-top: 3rem;
 }
@@ -2342,28 +2350,16 @@ video {
   padding-top: 0.5rem;
 }
 
+.pt-4 {
+  padding-top: 1rem;
+}
+
 .pt-5 {
   padding-top: 1.25rem;
 }
 
 .pt-6 {
   padding-top: 1.5rem;
-}
-
-.pl-8 {
-  padding-left: 2rem;
-}
-
-.pl-10 {
-  padding-left: 2.5rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
-}
-
-.pb-5 {
-  padding-bottom: 1.25rem;
 }
 
 .text-left {
@@ -3022,12 +3018,6 @@ video {
 
 .backdrop\:bg-black\/50::backdrop {
   background-color: rgb(0 0 0 / 0.5);
-}
-
-.backdrop\:backdrop-blur-sm::backdrop {
-  --tw-backdrop-blur: blur(4px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .hover\:bg-strongpurple:hover {
