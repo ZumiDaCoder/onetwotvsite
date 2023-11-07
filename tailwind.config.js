@@ -37,6 +37,24 @@ module.exports = {
 
     },
     extend: {
+      animation: {
+        wipe: 'wipe 1.5s ease forwards'
+      },
+      keyframes: {
+        wipe: {
+          "0%": {
+            'clip-path': 'polygon(-40% 0, 0 0, -10% 100%, -50% 100%)',
+            opacity: 0
+          },
+          "50%": {
+            opacity: 1
+          },
+          "100%": {
+            'clip-path': 'polygon(140% 0, 180% 0, 170% 100%, 130% 100%)',
+            opacity: 0
+          }
+        }
+      },
       spacing: {
         '128': '32rem',
         '144': '36rem',
