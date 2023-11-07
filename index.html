@@ -61,7 +61,7 @@
         <div class="flex flex-col space-y-6 md:w-1/2">
           <h1 class="max-w-md text-xl font-bold text-left text-orange md:text-3xl ">The Number One Football Show in East
             Africa</h1>
-          <p class="hidden max-w-md text-base text-center md:block md:text-left text-yellow md:text-xl">
+          <p class="hidden max-w-md text-base font-semibold text-center md:block md:text-left text-yellow md:text-xl">
             One Two TV is the home of football fun, banter and a little bit of analysis when one of our hosts' teams is
             struggling as they try and make sense of it all.
           </p>
@@ -84,19 +84,14 @@
       <!-- Our Content -->
       <div class="flex flex-col px-4 mt-10 space-y-6 md:w-1/4">
         <h2 class="max-w-md text-3xl font-bold text-center text-orange md:text-left">What We Do</h2>
-        <p class="max-w-sm text-center text-yellow md:text-left">
+        <p class="max-w-sm font-semibold text-center text-yellow md:text-left">
           We essentially sit around as friends and talk about our favourite teams on a weekly basis.
           We're not pundits, we don't pretend to be. We're just your regular fans who like discussing football with one
           another.
           But most importantly, we love laughing at each other's misery when there's reason to laugh and make fun of our
           friend's teams.
         </p>
-        <!-- Button -->
-        <a href="https://www.instagram.com/onetwo_tv/" target="_blank"
-          class="w-2/3 p-3 px-6 pt-2 rounded-full text-strongpurple bg-orange hover:bg-yellow">Check us out on IG</a>
-        <!-- TODO Add Subscribe button to the page -->
         <!-- TODO Add tracking system to see how many subscribers come from the site -->
-
       </div>
       <div class="flex flex-row gap-4 pl-10 space-y-0 md:w-3/4">
 
@@ -249,8 +244,7 @@
 
       </div>
   </section>
-  <!-- TODO Remember to adjust size of Hosts & Guests photos -->
-  <!-- TODO Add Team Logos to the hosts/guests -->
+  
   <!-- About Us -->
   <section id="about-us">
     <!-- Container for Heading Block -->
@@ -362,7 +356,7 @@
             <li>Easily triggered</li>
           </ul>
           <a href="https://twitter.com/kiarie_kangonga" target="_blank"
-            class="w-2/3 p-3 px-6 pt-2 rounded-full text-strongpurple bg-orange hover:bg-yellow">Follow Kiarie on X</a>
+            class="w-2/3 p-3 px-6 pt-2 rounded-full text-strongpurple bg-orange font hover:bg-yellow">Follow Kiarie on X</a>
         </div>
       </div>
     </div>
@@ -422,31 +416,32 @@
 
   <footer class="bg-purple">
     <!-- Flex Container -->
-    <div class="container justify-center py-10 space-y-12">
+    <div class="container flex flex-row items-center justify-between p-6 mx-auto">
       <!-- Logo and Social Links Container -->
       <!-- Logo -->
-      <div class="flex justify-center">
+      <div class="space-y-4">
         <img src="assets/imgs/logo.svg" class="h-8" alt="">
-    </div>
+        <p class="font-bold text-orange">Copyright &copy; 2023 One Two TV, All rights
+          reserved.</p>
+      </div>
     
     <!-- Input Container -->
-    <div class="flex flex-col justify-between">
-        <form id="contact" action="submit">
-            <div class="flex space-x-3">
-                <input type="text" class="placeholder="Reach out to us!">
-                <button class="rounded-full text-yellow bg-lightpurple hover:bg-strongpurple focus:outline-none">
-                    Send the reach!
-                </button>
-            </div>
+    <div class="">
+      <div class="">
+        <form id="contact" class="flex" action="submit">
+          <input class="px-8 py-4 rounded-full rounded-r-none" type="text" placeholder="Reach out to us!">
+          <button class="px-8 py-4 rounded-full rounded-l-none text-yellow bg-lightpurple hover:bg-strongpurple focus:outline-none">
+              Send the reach!
+          </button>
         </form>
+        </div>
+            
         <!-- Other Footer Items -->
-        <div>
-            <p class="text-orange">Copyright &copy; 2023 One Two TV, All rights
-                reserved.</p>
+        <div class="flex flex-wrap">
+            
         </div>
     </div>
     </div>
-
   </footer>
 
 
