@@ -839,6 +839,14 @@ html {
   margin-top: 2rem;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
+.mt-36 {
+  margin-top: 9rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -3272,6 +3280,10 @@ html {
     position: absolute;
   }
 
+  .md\:ml-auto {
+    margin-left: auto;
+  }
+
   .md\:block {
     display: block;
   }
@@ -3306,6 +3318,10 @@ html {
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:w-2\/4 {
+    width: 50%;
   }
 
   .md\:max-w-xl {
