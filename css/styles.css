@@ -6,26 +6,33 @@
     html {
         font-family: Inter, sans-serif;
     }
+    * {
+        text-wrap: balance;
+    }
 }
+
+
 
 
 /* Hamburger Menu */
 .hamburger {
+    --unit: 6px;
     cursor: pointer;
-    width: 24px;
-    height: 16px; 
+    width: calc(4.5 * var(--unit));
+    height: calc(4 * var(--unit)); 
     transition: all 0.25s;
     position: relative;
+    
 }
 
 .hamburger-top,
 .hamburger-middle,
 .hamburger-bottom {
     position: absolute;
-    height: 2px;
+    height: calc(0.3 * var(--unit));
     background-color: orange;
-    left: 0;
-    width: 12px;
+    left: var(--unit);
+    right: var(--unit);
     display: block;
     transition: all 0.5s;
 }
@@ -36,11 +43,11 @@
 }
 
 .hamburger-bottom {
-    bottom: 0;
+    bottom: var(--unit);
 }
 
 .hamburger-top {
-    top: 0;
+    top: var(--unit);
     
 }
 
