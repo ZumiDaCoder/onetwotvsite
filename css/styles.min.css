@@ -2758,6 +2758,10 @@ html {
   padding-top: 1.5rem;
 }
 
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -3711,6 +3715,10 @@ html {
     flex-direction: column;
   }
 
+  .md\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
   .md\:items-start {
     align-items: flex-start;
   }
@@ -3756,6 +3764,10 @@ html {
   .md\:object-cover {
     -o-object-fit: cover;
        object-fit: cover;
+  }
+
+  .md\:p-6 {
+    padding: 1.5rem;
   }
 
   .md\:py-12 {
