@@ -4,9 +4,20 @@ const dialog = document.querySelector('dialog')
 const video = document.getElementById('modal-video')
 
 btn.addEventListener('click', () => {
-    btn.classList.toggle('open')
-    nav.classList.toggle('flex')
-    nav.classList.toggle('hidden')
+    const isOpen = btn.classList.contains('open')
+    if (isOpen) {
+    btn.classList.remove('open')
+    nav.classList.remove('flex')
+    nav.classList.add('hidden')
+    document.body.style.overflowY = 'auto';
+} else {
+    btn.classList.add('open')
+    nav.classList.add('flex')
+    nav.classList.remove('hidden')
+    document.body.scrollTop = 0;
+    document.body.style.overflowY = 'hidden';
+}
+    
 })
 
 
