@@ -716,6 +716,10 @@ html {
   grid-column: span 2 / span 2;
 }
 
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
 .float-right {
   float: right;
 }
@@ -1142,6 +1146,10 @@ html {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .max-w-2xl {
@@ -3445,6 +3453,16 @@ html {
   }
 }
 
+.placeholder\:text-purple::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(64 58 96 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-purple::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(64 58 96 / var(--tw-text-opacity));
+}
+
 .backdrop\:fixed::backdrop {
   position: fixed;
 }
@@ -3558,6 +3576,10 @@ html {
     grid-column: span 2 / span 2;
   }
 
+  .sm\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
   .sm\:mt-20 {
     margin-top: 5rem;
   }
@@ -3651,6 +3673,10 @@ html {
 
   .md\:flex-1 {
     flex: 1 1 0%;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -3748,6 +3774,10 @@ html {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:px-8 {
